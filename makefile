@@ -10,7 +10,7 @@ $(TARGET):
 .PHONY: create
 $create: guessinggame.sh
 	echo "### MY PROJECT" > $(TARGET).md
-	echo "ls -l \n" makefile >> $(TARGET).md
+	ls -l  makefile >> $(TARGET).md
 	wc -l guessinggame.sh | egrep -o "[0-9]+" >> $(TARGET).md
 
 clean:
